@@ -14,6 +14,7 @@ class FT_CROPOUT_API AC_spawner : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AC_spawner();
+	
 
 protected:
 	// Called when the game starts or when spawned

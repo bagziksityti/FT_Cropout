@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "C_spawner.h"
 #include "CPP_CO_GameModeBase.generated.h"
 
 /**
@@ -16,5 +17,9 @@ class FT_CROPOUT_API ACPP_CO_GameModeBase : public AGameModeBase
 public:
 	UPROPERTY(BlueprintReadWrite)
 	int _villagerCount = 0;
+	UPROPERTY(BlueprintReadWrite)
+	AC_spawner* _spawner;
+	UFUNCTION(BlueprintCallable)
+	AActor* CGetSpawnRef();
 	
 };
