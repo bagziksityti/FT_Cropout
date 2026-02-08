@@ -13,5 +13,8 @@ UCLASS()
 class FT_CROPOUT_API ACPP_CO_GameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+public:
+	UPROPERTY(BlueprintReadWrite)
+	int _villagerCount = 0;
 	
 };
